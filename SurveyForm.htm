@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Education Survey Form</title>
+    <link rel="stylesheet" href="surveyproject.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <script src="myfile.js"></script>
+  </head>
+  <body>
+    <h1 id="title">Education Survey Form</h1>
+    <p id="description">Contribute to improve our education policy</p>
+    <form id="survey-form" name="myForm" onsubmit="return Validate()">
+      <section>
+        <label id="name-label"><div>Name</div>
+          <input onchange="mystyle1()" id="name" placeholder="Your name here" name="full_name" required>
+          </input>
+        </label>
+        <label id="email-label"><div>Email</div> 
+          <input onchange="mystyle2()" id="email" placeholder="Your email address here" name="email_address" required>
+          </input>
+        </label>
+        <label id="number-label"><div>Age</div>
+          <input id="number" type="number" min="18" max="59" placeholder="Your age here" name="age" required>
+          </input>
+        </label>
+      </section>
+      <section>
+        <label><div>Which stream you are in</div> 
+          <select id="dropdown" name="stream">
+            <option value="Arts">Arts</option>
+            <option value="Com.">Commerce</option>
+            <option value="Sc.">Science</option>
+          </select>
+        </label>
+      </section>
+      <section>
+        <fieldset>
+          <legend>How do you see yourself in future?</legend>
+          <label>
+            <input type="radio" name="job_preference" value="govt_service">
+            </input> Govt. service
+          </label>
+          <label>
+            <input type="radio" name="job_preference" value="private_service">
+            </input> Private service
+          </label>
+          <label>
+            <input type="radio" name="job_preference" value="business">
+            </input> Own business
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>How does your bucket of favourite subjects look like?</legend>
+          <label>
+            <input type="checkbox" name="Subjects" value="Phy">
+            </input> Physics
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Chem">
+            </input> Chemistry
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Bio">
+            </input> Biology
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Maths">
+            </input> Mathematics
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Comp">
+            </input> Computers
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Hist">
+            </input> History
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Geog">
+            </input> Geography
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Psy">
+            </input> Psychology
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Pol">
+            </input> Pholitical Sc.
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Acc">
+            </input> Accountancy
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Eco">
+            </input> Economics
+          </label>
+          <label>
+            <input type="checkbox" name="Subjects" value="Law">
+            </input> Law
+          </label>
+        </fieldset>
+      </section>
+      <section>
+        <label><div>Give your suggestions here</div> 
+          <textarea name="Suggestions" rows="3" cols="32">I would like to see changes in...
+          </textarea>
+        </label>
+      </section>
+      <span class="clearfix">
+      <input type="submit" id="submit"></span>
+    </form>
+  </body>
+</html>

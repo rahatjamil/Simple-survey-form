@@ -1,0 +1,122 @@
+  body{
+    width: 100%;
+    height: auto;
+    font-family: Arial;
+    font-size: 16px;
+    position : relative;
+  }
+
+  body::before {
+    position : absolute;
+    content : '';
+    background-image: url("aaa.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity : 0.5;
+    z-index: -2;
+  }
+  
+  h1, p{
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 20px white;
+  }
+
+  p{
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  form{
+    width: 70%;
+    color: white;
+    margin: 0 auto;
+    background-color: rgba(50, 50, 100, 0.95);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  label {
+    display: block;
+    padding: 10px 15px 0px 15px;
+  }
+  
+  input[name="full_name"], input[name="email_address"], input[name="age"], select, textarea{
+    width:72%;
+    border-radius: 3px;
+    padding: 8px;
+    background-color: rgba(50, 50, 100, 1);
+    border: 1px solid gray;
+    color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  div{
+    width: 25%;
+    display: inline-block;
+    padding: 0 0 0 15px;
+  }
+  
+  ::placeholder{
+    color: grey;
+  }
+
+  fieldset{
+    border: 1px solid gray;
+    margin: 15px;
+  }
+
+  textarea{
+    vertical-align: top;
+  }
+
+  input[type="submit"]{
+    width: 25%;
+    background-color: green;
+    border-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    margin: 15px 20px 5px 0;
+    float: right;
+    clear: both;
+  }
+
+  .clearfix::after{
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+  @media screen and (max-width: 1000px) {
+    input[type="text"], input[type="email"], input[type="number"], select, textarea, div {
+      width: 100%;
+      margin-bottom: 3px;  
+    }
+    input[type="submit"] {
+      margin: 10px auto;
+      float: none;
+      width: 95%;
+    }
+  }
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+  }
+
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+    -webkit-text-fill-color: #333;
+  } 
+  
+
+
+  
